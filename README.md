@@ -55,6 +55,7 @@ This repository contains solutions for **Assignment of Computer Vision **. The t
 └── README.md
 ```
 
+<!-- 
 ---
 
 ## ▶ How to Run
@@ -73,7 +74,7 @@ This repository contains solutions for **Assignment of Computer Vision **. The t
    ```
 4. Run each cell to reproduce results.
 
----
+--- -->
 
 ## 📥 Input Images & Videos
 All input files are in the `images/` folder:
