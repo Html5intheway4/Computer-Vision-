@@ -2,7 +2,21 @@
 # Computer Vision Assignment 
 
 ## 📌 Overview
-This repository contains solutions for **Assignment of Computer Vision **. The tasks involve implementing various image processing and computer vision techniques, including morphological operations, clustering, feature detection, Hough transforms, and background subtraction.
+This repository contains solutions for multiple **Computer Vision assignments**, focusing on core image processing and computer vision techniques. The implementations cover a wide range of concepts, including:
+
+- **Morphological operations** for preprocessing and thresholding
+- **Image segmentation** using K-Means and Mean Shift clustering
+- **Feature detection** (Harris corners, SIFT)
+- **Geometric transformations** and interpolation methods
+- **Histogram equalization** and **gamma correction** for contrast enhancement
+- **Spatial filtering** for noise reduction
+- **Hough Transform** for detecting lines and circles
+- **Template matching** using correlation
+- **Edge detection** with non-maximal suppression
+- **Background subtraction** for moving object detection in videos
+
+All solutions are implemented in **Python**, primarily using **OpenCV, NumPy, and Matplotlib**, with clustering supported by **Scikit-learn**. The repository includes Jupyter Notebooks, input images, and output results for visualization.
+
 
 ---
 
