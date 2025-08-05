@@ -100,13 +100,17 @@ _Output:_
 
 ### Q2 – KMeans vs Mean Shift Segmentation
 _Input:_  
-![white-flower.png](images/white-flower.png)
+<p align="center">
+  <img src="images/white-flower.png" alt="White Flower" width="250"/>
+  <img src="images/butterfly.jpg" alt="Butterfly" width="250"/>
+  <img src="images/camel.jpg" alt="Camel" width="250"/>
+</p>
+
 
 _Output:_  
 KMeans:  
-![Q2_kmeans.png](outputs/Q2_kmeans.png)  
-Mean Shift:  
-![Q2_meanshift.png](outputs/Q2_meanshift.png)
+![Segmentation](outputs/output_segmentation.png)  
+
 
 ---
 
