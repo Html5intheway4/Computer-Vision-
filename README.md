@@ -7,6 +7,7 @@ This repository contains solutions for **Assignment of Computer Vision **. The t
 ---
 
 ## ✅ Problem Statements
+
 1. **Top-hat/Bottom-hat Filtering & Thresholding**
    - Preprocess `morf_test.png` using top-hat or bottom-hat filtering.
    - Estimate and subtract background.
@@ -37,14 +38,61 @@ This repository contains solutions for **Assignment of Computer Vision **. The t
 
 ---
 
-## 🛠 Technologies Used
-- **Python 3**
-- **OpenCV (opencv-python & opencv-contrib-python)**
-- **NumPy**
-- **Matplotlib**
-- **Scikit-learn** (for KMeans)
+7. **Image Scaling using Interpolation**
+   - Given the image `lenna.png` (220x220 pixels):
+     - Apply **bilinear** and **nearest-neighbor interpolation** to scale up the image.
+     - Compare results based on **smoothness**, **sharpness**, and **artifacts**.
+
+8. **Geometric Transformation with Affine Matrix**
+   - Implement an **affine transformation** (hand-coded).
+   - Apply to `cameraman.jpg`:
+     - Translate by **25 pixels right** and **30 pixels down**.
+     - Expand by **2.0x horizontally** and shrink by **0.5x vertically**.
+   - Compare results with **OpenCV inbuilt function**.
+
+9. **Histogram Equalization & Gamma Correction**
+   - Perform **histogram equalization** on `home.jpg`.
+   - Apply **gamma correction** on `sunset.jpg` using multiple gamma values.
+   - Find the best gamma-corrected result.
+   - Compare histogram equalization vs best gamma correction.
+
+10. **Spatial Filtering**
+    - Implement:
+      - **Averaging filter**
+      - **Weighted averaging filter**
+      - **Median filter (3x3, 5x5)**
+    - Apply on `noise.tiff` and `car.png`.
+    - Find **optimum kernel size** for median filter (clear features, minimal noise).
+    - Do NOT use built-in spatial filtering functions.
+
+11. **Template Matching using Correlation**
+    - Find the largest correlation spot in `hills.jpg` using **linear filtering-based template matching**.
+    - Template: `template.png`.
+    - Draw a **bounding box** at matched location.
+
+12. **Edge Detection (Bonus)**
+    - Complete `edge_detection(img)`:
+      - Normalize image to [0,1]
+      - Apply Gaussian smoothing (σ=0.5)
+      - Compute **gradient magnitude & angle**
+      - Apply **Non-Maximal Suppression** (8 directions, each 45°)
+    - Input: `coins.jpg`
+    - Output: gradient magnitude, angle image, and NMS image.
 
 ---
+
+## 🛠 Technologies & Libraries Used
+- **Python 3.x**
+- **OpenCV** (`opencv-python`, `opencv-contrib-python`)
+- **NumPy** – numerical computations
+- **Matplotlib** – data visualization & plotting
+- **Scikit-learn** – clustering (KMeans)
+- **Scipy** – image filtering & transformations
+- **Pandas** – for any optional data handling
+- **Jupyter Notebook** – for interactive execution
+
+---
+
 
 ## 📂 Repository Structure
 ```
@@ -78,10 +126,10 @@ This repository contains solutions for **Assignment of Computer Vision **. The t
 
 ## 📥 Input Images & Videos
 All input files are in the `images/` folder:
-- `morf_test.png`
+<!--- `morf_test.png`
 - `white-flower.png`, `butterfly.jpg`, `camel.jpg`
 - `chessboard.jpg`, `coins.jpg`
-- `image1.png`, `image2.png`
+- `image1.png`, `image2.png`-->
 
 
 ---
@@ -139,6 +187,78 @@ Circles:
 ![Shift](outputs/output_shift_brute.png)
 
 ---
+#### **Q7 – Image Scaling**
+**Input:**  
+![lenna.png](images/lenna.png)
+
+**Output:**  
+- Nearest Neighbor:  
+![output_q7_nearest.png](outputs/output_q7_nearest.png)  
+- Bilinear Interpolation:  
+![output_q7_bilinear.png](outputs/output_q7_bilinear.png)
+
+---
+
+#### **Q8 – Affine Transformation**
+**Input:**  
+![cameraman.jpg](images/cameraman.jpg)
+
+**Output:**  
+![output_q8_affine.png](outputs/output_q8_affine.png)
+
+---
+
+#### **Q9 – Histogram Equalization & Gamma Correction**
+**Inputs:**  
+![home.jpg](images/home.jpg)  
+![sunset.jpg](images/sunset.jpg)
+
+**Outputs:**  
+- Histogram Equalization:  
+![output_q9_hist_eq.png](outputs/output_q9_hist_eq.png)  
+- Best Gamma Correction:  
+![output_q9_gamma.png](outputs/output_q9_gamma.png)
+
+---
+
+#### **Q10 – Spatial Filtering**
+**Inputs:**  
+![noise.tiff](images/noise.tiff)  
+![car.png](images/car.png)
+
+**Outputs:**  
+- Averaging Filter:  
+![output_q10_avg.png](outputs/output_q10_avg.png)  
+- Weighted Average:  
+![output_q10_weighted.png](outputs/output_q10_weighted.png)  
+- Median Filter (Optimum Kernel):  
+![output_q10_median.png](outputs/output_q10_median.png)
+
+---
+
+#### **Q11 – Template Matching**
+**Input:**  
+![hills.jpg](images/hills.jpg)  
+![template.png](images/template.png)
+
+**Output:**  
+![output_q11_template.png](outputs/output_q11_template.png)
+
+---
+
+#### **Q12 – Edge Detection**
+**Input:**  
+![coins.jpg](images/coins.jpg)
+
+**Outputs:**  
+- Gradient Magnitude:  
+![output_q12_gradient.png](outputs/output_q12_gradient.png)  
+- Gradient Angle:  
+![output_q12_angle.png](outputs/output_q12_angle.png)  
+- After Non-Maximal Suppression:  
+![output_q12_nms.png](outputs/output_q12_nms.png)
+
+---
 
 <!--### Q6 – Moving Vehicle Detection
 _Add a GIF or short video:_  
@@ -146,13 +266,22 @@ _Add a GIF or short video:_
 
 ---
 
+
+
 ## 📈 Results & Observations
+
+### **Assignment **
 - **Q1:** Background estimation and morphological filtering significantly improved thresholding results.
 - **Q2:** Mean Shift produced more accurate segmentation for complex regions compared to KMeans.
 - **Q3:** Harris Corner Detector successfully detected chessboard corners.
 - **Q4:** Hough Transform effectively detected both lines and circles.
 - **Q5:** SIFT feature matching accurately matched keypoints across two images.
 - **Q6:** Median differencing was effective for moving vehicle detection but may fail under shadows and lighting changes.
+- **Q7:** Bilinear interpolation produced smoother images compared to nearest-neighbor, which appeared blocky.
+- **Q8:** Affine transformation implementation worked as expected; results were consistent with OpenCV’s built-in function.
+- **Q9:** Histogram equalization enhanced overall contrast, while gamma correction allowed better control of brightness for specific gamma values.
+- **Q10:** Median filter (size 5×5) provided the best noise reduction with minimal detail loss compared to averaging filters.
+- **Q11:** Template matching successfully located the object using correlation, though performance depends on noise and lighting.
+- **Q12:** Edge detection pipeline worked effectively; non-maximum suppression preserved strong edges while reducing noise.
 
----
 
