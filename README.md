@@ -187,15 +187,16 @@ Circles:
 ![Shift](outputs/output_shift_brute.png)
 
 ---
+
 #### **Q7 – Image Scaling**
 **Input:**  
-![lenna.png](images/lenna.png)
+![lenna.png](images/Lenna.png)
 
 **Output:**  
-- Nearest Neighbor:  
-![output_q7_nearest.png](outputs/output_q7_nearest.png)  
-- Bilinear Interpolation:  
-![output_q7_bilinear.png](outputs/output_q7_bilinear.png)
+- Nearest Neighbor & Bilinear Comparison:  
+![output_NN_BI.png](outputs/output_NN_BI.png)  
+- Transformed Image:  
+![output_transformed.png](outputs/output_transformed.png)
 
 ---
 
@@ -204,7 +205,23 @@ Circles:
 ![cameraman.jpg](images/cameraman.jpg)
 
 **Output:**  
-![output_q8_affine.png](outputs/output_q8_affine.png)
+- Combined Inbuilt vs Custom Transformation:  
+![output_inbuilt_vs_custom.png](outputs/output_inbuilt_vs_custom.png)  
+- Individual Transformations:  
+  - Translation:  
+    ![output_transformed_img_translation.png](outputs/output_transformed_img_translation.png)  
+  - Scaling:  
+    ![output_transformed_img_scaling.png](outputs/output_transformed_img_scaling.png)  
+  - Rotation:  
+    ![output_transformed_imagerotation.png](outputs/output_transformed_imagerotation.png)  
+  - Shearing:  
+    ![output_transformed_img_shearing.png](outputs/output_transformed_img_shearing.png)  
+    ![output_transformed_img_shear_vertical.png](outputs/output_transformed_img_shear_vertical.png)  
+- Inbuilt vs Custom for Each:  
+  ![output_translationinbuilt_vs_custom.png](outputs/output_translationinbuilt_vs_custom.png)  
+  ![output_scaling_inbuilt_vs_custom.png](outputs/output_scaling_inbuilt_vs_custom.png)  
+  ![output_inbuilt_rotation_custom.png](outputs/output_inbuilt_rotation_custom.png)  
+  ![output_shear_inbuilt_custom.png](outputs/output_shear_inbuilt_custom.png)  
 
 ---
 
@@ -214,10 +231,20 @@ Circles:
 ![sunset.jpg](images/sunset.jpg)
 
 **Outputs:**  
-- Histogram Equalization:  
-![output_q9_hist_eq.png](outputs/output_q9_hist_eq.png)  
-- Best Gamma Correction:  
-![output_q9_gamma.png](outputs/output_q9_gamma.png)
+- Histogram Comparisons:  
+  ![output_histogram_sunset_home.png](outputs/output_histogram_sunset_home.png)  
+  ![output_histogram_sunset_home_grayscale.png](outputs/output_histogram_sunset_home_grayscale.png)  
+- Equalized vs CLAHE:  
+  ![output_equalised_home.png](outputs/output_equalised_home.png)  
+  ![output_CLAHE_home_vs_equalisedhome.png](outputs/output_CLAHE_home_vs_equalisedhome.png)  
+  ![output_equalised_sunset.png](outputs/output_equalised_sunset.png)  
+  ![output_CLAHE_sunset_vs_equalised.png](outputs/output_CLAHE_sunset_vs_equalised.png)  
+- Gamma Correction:  
+  ![output_gamma.png](outputs/output_gamma.png)  
+  ![output_gamma_sunset.png](outputs/output_gamma_sunset.png)  
+- Comparison of Methods:  
+  ![output_sunset_comaparision.png](outputs/output_sunset_comaparision.png)  
+  ![output_comparision_home.png](outputs/output_comparision_home.png)  
 
 ---
 
@@ -227,38 +254,38 @@ Circles:
 ![car.png](images/car.png)
 
 **Outputs:**  
-- Averaging Filter:  
-![output_q10_avg.png](outputs/output_q10_avg.png)  
-- Weighted Average:  
-![output_q10_weighted.png](outputs/output_q10_weighted.png)  
-- Median Filter (Optimum Kernel):  
-![output_q10_median.png](outputs/output_q10_median.png)
+- Average Filters:  
+  ![output_average_filter.png](outputs/output_average_filter.png)  
+  ![output_gaussian_average_filter.png](outputs/output_gaussian_average_filter.png)  
+- Median Filters:  
+  ![output_median_averagefilter.png](outputs/output_median_averagefilter.png)  
+  ![output_medianblur_noise+car.png](outputs/output_medianblur_noise+car.png)  
+- Inbuilt Comparison:  
+  ![output_inbuilt_noise_car.png](outputs/output_inbuilt_noise_car.png)  
 
 ---
 
 #### **Q11 – Template Matching**
 **Input:**  
-![hills.jpg](images/hills.jpg)  
+![hills.jpg](images/hills.jpeg)  
 ![template.png](images/template.png)
 
 **Output:**  
-![output_q11_template.png](outputs/output_q11_template.png)
+![output_tm_ccoeff_normed.png](outputs/output_tm_ccoeff_normed.png)
 
 ---
 
 #### **Q12 – Edge Detection**
 **Input:**  
-![coins.jpg](images/coins.jpg)
+![coins.jpg](images/coins.jpeg)
 
 **Outputs:**  
-- Gradient Magnitude:  
-![output_q12_gradient.png](outputs/output_q12_gradient.png)  
-- Gradient Angle:  
-![output_q12_angle.png](outputs/output_q12_angle.png)  
-- After Non-Maximal Suppression:  
-![output_q12_nms.png](outputs/output_q12_nms.png)
+- Gradient Magnitude & Edge Detection:  
+  ![output_edge_detection.png](outputs/output_edge_detection.png)  
+  ![output_lenna_edge_detection.png](outputs/output_lenna_edge_detection.png)  
 
 ---
+
 
 <!--### Q6 – Moving Vehicle Detection
 _Add a GIF or short video:_  
