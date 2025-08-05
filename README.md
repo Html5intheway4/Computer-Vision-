@@ -96,8 +96,7 @@ This repository contains solutions for **Assignment of Computer Vision **. The t
 
 ## 📂 Repository Structure
 ```
-├── CV_Assignment_2.ipynb   # Jupyter Notebook with all solutions
-├── CV_Assignment_2_WS_2024.pdf  # Problem Statement
+├── CV_Assignment/          # Folder for all the code
 ├── images/                 # Folder for input images 
 ├── outputs/                # Folder for output results 
 └── README.md
