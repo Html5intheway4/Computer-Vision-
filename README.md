@@ -250,7 +250,7 @@ Circles:
 
 #### **Q10 – Spatial Filtering**
 **Inputs:**  
-![noise.tiff](images/noise.tiff)  
+![noise.tiff](images/noise.tif)  
 ![car.png](images/car.png)
 
 **Outputs:**  
