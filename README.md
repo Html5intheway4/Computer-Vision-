@@ -50,8 +50,8 @@ This repository contains solutions for **Assignment 2 of Computer Vision (CSL536
 ```
 ├── CV_Assignment_2.ipynb   # Jupyter Notebook with all solutions
 ├── CV_Assignment_2_WS_2024.pdf  # Problem Statement
-├── images/                 # Folder for input images (add here)
-├── outputs/                # Folder for output results (add here)
+├── images/                 # Folder for input images 
+├── outputs/                # Folder for output results 
 └── README.md
 ```
 
