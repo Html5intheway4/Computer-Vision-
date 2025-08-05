@@ -2,7 +2,7 @@
 # Computer Vision Assignment 
 
 ## 📌 Overview
-This repository contains solutions for **Assignment 2 of Computer Vision (CSL536)**. The tasks involve implementing various image processing and computer vision techniques, including morphological operations, clustering, feature detection, Hough transforms, and background subtraction.
+This repository contains solutions for **Assignment of Computer Vision **. The tasks involve implementing various image processing and computer vision techniques, including morphological operations, clustering, feature detection, Hough transforms, and background subtraction.
 
 ---
 
@@ -76,18 +76,17 @@ This repository contains solutions for **Assignment 2 of Computer Vision (CSL536
 ---
 
 ## 📥 Input Images & Videos
-Place all input files in the `images/` folder:
+All input files are in the `images/` folder:
 - `morf_test.png`
 - `white-flower.png`, `butterfly.jpg`, `camel.jpg`
 - `chessboard.jpg`, `coins.jpg`
 - `image1.png`, `image2.png`
-- `traffic.mp4`
+
 
 ---
 
 ## 📤 Output Results
-Place output results in the `outputs/` folder.  
-Add examples in the README below for reference:
+All output results are in the `outputs/` folder.  
 
 ### Q1 – Morphological Processing
 _Input:_  
