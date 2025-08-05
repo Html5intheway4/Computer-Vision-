@@ -94,7 +94,7 @@ _Input:_
 ![morf_test.png](images/morf_test.png)
 
 _Output:_  
-![Q1_result.png](outputs/Q1_result.png)
+![Q1_result.png](outputs/output_threshold.png)
 
 ---
 
@@ -103,7 +103,7 @@ _Input:_
 <p align="center">
   <img src="images/white-flower.png" alt="White Flower" width="250"/>
   <img src="images/butterfly.jpg" alt="Butterfly" width="250"/>
-  <img src="images/camel.jpg" alt="Camel" width="250"/>
+  <img src="images/camel.png" alt="Camel" width="250"/>
 </p>
 
 
@@ -115,26 +115,34 @@ KMeans:
 ---
 
 ### Q3 – Harris Corner Detection
-![Q3_result.png](outputs/Q3_result.png)
+_Input:_  
+![Chessboard](images/chessboard.png)
+
+_Output:_  
+![Q3_result.png](outputs/output_chessboard_harris.png)
+
 
 ---
 
 ### Q4 – Hough Transform
 Lines:  
-![Q4_lines.png](outputs/Q4_lines.png)  
+![Chess](outputs/output_chessboard_hough.png)  
+_Input:_ 
+![Coins](images/coins.jpg)
 Circles:  
-![Q4_circles.png](outputs/Q4_circles.png)
+![Coins](outputs/output_coins_hough_circle.png)
 
 ---
 
 ### Q5 – SIFT Feature Matching
-![Q5_result.png](outputs/Q5_result.png)
+![Shift](outputs/output_shift.png)
+![Shift](outputs/output_shift_brute.png)
 
 ---
 
-### Q6 – Moving Vehicle Detection
+<!--### Q6 – Moving Vehicle Detection
 _Add a GIF or short video:_  
-![Q6_output.gif](outputs/Q6_output.gif)
+![Q6_output.gif](outputs/Q6_output.gif)-->
 
 ---
 
@@ -148,6 +156,3 @@ _Add a GIF or short video:_
 
 ---
 
-## ✅ Next Steps
-- Add images and videos in respective placeholders.
-- Push repository to GitHub.
